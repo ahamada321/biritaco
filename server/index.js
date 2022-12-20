@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const compression = require("compression");
 const path = require("path");
 const config = require("./config");
-const FakeDb = require("./fake-db");
+// const FakeDb = require("./fake-db");
 
 // const rentalRoutes = require("./routes/rentals");
 // const userRoutes = require("./routes/users");
@@ -22,7 +22,7 @@ mongoose
   })
   .then(() => {
     if (process.env.NODE_ENV !== "production") {
-      const fakeDb = new FakeDb();
+      // const fakeDb = new FakeDb();
       // fakeDb.seeDb()
     }
   })
