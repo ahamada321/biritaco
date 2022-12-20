@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { StaticModule } from './statics/statics.module';
 
 const routes: Routes = [];
 
@@ -8,6 +9,7 @@ const routes: Routes = [];
     RouterModule.forRoot(routes, {
       useHash: true,
     }),
+    StaticModule,
   ],
   exports: [RouterModule],
 })
