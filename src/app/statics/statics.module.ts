@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LpBiritacoComponent } from './lp-biritaco/lp-biritaco.component';
+import { SubscriptionFormModule } from '../shared/subscription-form/subscription-form.module';
 
 const routes: Routes = [
   { path: '', component: LpBiritacoComponent },
@@ -26,6 +27,7 @@ const routes: Routes = [
     NgbModule,
     FormsModule,
     ReactiveFormsModule,
+    SubscriptionFormModule,
   ],
   exports: [],
   providers: [],
