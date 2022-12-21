@@ -45,7 +45,6 @@ export class LpBiritacoComponent implements OnInit, OnDestroy {
     var body = document.getElementsByTagName('body')[0];
     body.classList.add('landing-page');
     body.classList.add('presentation-page'); // temporary
-    (<any>window).twttr.widgets.load();
   }
 
   ngOnDestroy() {
@@ -129,5 +128,6 @@ export class LpBiritacoComponent implements OnInit, OnDestroy {
   }
   ngAfterViewInit() {
     this.updateNavigation();
+    (<any>window).twttr.widgets.load(document.getElementById('twitter'));
   }
 }
