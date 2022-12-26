@@ -5,10 +5,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LpBiritacoComponent } from './lp-biritaco/lp-biritaco.component';
+import { LpHamadalabComponent } from './lp-hamadalab/lp-hamadalab.component';
 import { SubscriptionFormModule } from '../shared/subscription-form/subscription-form.module';
 
 const routes: Routes = [
   { path: '', component: LpBiritacoComponent },
+  { path: 'hamadalab', component: LpHamadalabComponent },
   //   { path: 'aboutus', component: AboutusComponent },
   //   { path: 'terms', component: TermsComponent },
   //   { path: 'privacy', component: PrivacyComponent },
@@ -20,7 +22,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [LpBiritacoComponent],
+  declarations: [LpBiritacoComponent, LpHamadalabComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
