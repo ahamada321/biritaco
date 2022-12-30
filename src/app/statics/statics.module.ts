@@ -7,10 +7,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LpBiritacoComponent } from './lp-biritaco/lp-biritaco.component';
 import { LpHamadalabComponent } from './lp-hamadalab/lp-hamadalab.component';
 import { SubscriptionFormModule } from '../shared/subscription-form/subscription-form.module';
+import { MembershipComponent } from './membership/membership.component';
 
 const routes: Routes = [
   { path: '', component: LpBiritacoComponent },
   { path: 'hamadalab', component: LpHamadalabComponent },
+  { path: 'membership', component: MembershipComponent },
   //   { path: 'aboutus', component: AboutusComponent },
   //   { path: 'terms', component: TermsComponent },
   //   { path: 'privacy', component: PrivacyComponent },
@@ -22,7 +24,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [LpBiritacoComponent, LpHamadalabComponent],
+  declarations: [
+    LpBiritacoComponent,
+    LpHamadalabComponent,
+    MembershipComponent,
+  ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
