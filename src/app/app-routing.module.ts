@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthModule } from './auth/auth.module';
 import { StaticModule } from './statics/statics.module';
 
 const routes: Routes = [];
@@ -11,6 +12,7 @@ const routes: Routes = [];
     // }),
     RouterModule.forRoot(routes),
     StaticModule,
+    AuthModule,
   ],
   exports: [RouterModule],
 })
