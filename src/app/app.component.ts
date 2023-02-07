@@ -101,13 +101,9 @@ export class AppComponent implements OnInit {
               // add logic
               navbar.classList.remove('navbar-transparent');
             } else if (
-              _locationExamples !== 'addproduct' &&
               _locationExamples !== 'blogposts' &&
-              _locationExamples !== 'discover' &&
               _locationExamples !== 'contactus' &&
-              _locationExamples !== 'login' &&
               _locationExamples !== 'register' &&
-              _locationExamples !== 'search' &&
               this.location.path() !== '/nucleoicons'
             ) {
               // remove logic
@@ -133,7 +129,7 @@ export class AppComponent implements OnInit {
   removeFooter() {
     var titlee = this.location.prepareExternalUrl(this.location.path());
     titlee = titlee.slice(1);
-    if (titlee === 'signup' || titlee === 'nucleoicons') {
+    if (titlee === 'register' || titlee === 'maintenance') {
       return false;
     } else {
       return true;
